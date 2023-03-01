@@ -4,6 +4,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import soundfile as sf
 
+from numpy.fft import fft     # Importem la funció fft
+
+
+
 T= 2.5                               # Durada de T segons
 fm=8000                              # Freqüència de mostratge en Hz
 fx=3500                              # Freqüència de la sinusoide
@@ -204,6 +208,11 @@ plt.show()
 
 
 # Exercici 4
+import wave as readwave
+obj = readwave.open('so_exercici4.wav','r')                   # Obrim el fitxer
+print( "Nombre de canals:",obj.getnchannels())            # Nombre de canals
+
+
 T= 0.025                               
 data, fm =sf.read('so_exercici4.wav')       
 L = int(fm * T)                     
