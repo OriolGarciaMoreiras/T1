@@ -91,7 +91,7 @@ plt.ylabel('$\phi_x[k]$')
 plt.show()  
 
 
-# Agafem la freqüència fx = 700 Hz
+# Agafem la freqüència fy = 700 Hz
 T = 2.5                              
 fm = 8000                            
 fy = 700                              
@@ -211,7 +211,11 @@ plt.show()
 import wave as readwave
 obj = readwave.open('so_exercici4.wav','r')                   # Obrim el fitxer
 print( "Nombre de canals:",obj.getnchannels())            # Nombre de canals
-
+if(obj.getnchannels()==1): {print("Mono")}
+else: {print("Stereo")}
+print ( "Freqüència de mostratge:",obj.getframerate())    # Freqüència de mostratge.
+print ("Nombre de mostres de senyal: ",obj.getnframes())  # Nombre de mostres de senyal.
+obj.close()                                               # Sortim del fitxer
 
 T= 0.025                               
 data, fm =sf.read('so_exercici4.wav')       
