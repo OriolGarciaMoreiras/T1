@@ -155,7 +155,7 @@ plt.show()
 <br> <br>
 
 ```python
-# Agafem la freqüència fx = 700 Hz
+# Agafem la freqüència fy = 700 Hz
 T = 2.5                              
 fm = 8000                            
 fy = 700                              
@@ -201,9 +201,12 @@ plt.show()
 <img src="img/figure5(ex1).PNG" width="500" align="center">
 <br> <br>
 
-### COMENTA ELS RESULTATS:
-Com podem veure en la primera gràfica (figure2) hi han 5 períodes, on cada període té una durada aproxima de 0.0002 segons (0.2 ms) i una amplitud de valor 4, per tant els 5 períodes junts tenen una durada d'aproximadament 0.001 segons (1 ms) i una amplitud de valor 4. 
-En la gràfica de la transformada (figure3) podem apreciar 
+### COMENTA ELS RESULTATS: <br>
+Com podem veure en la primera gràfica (figure2) hi ha 5 períodes, on cada període té una durada aproximada de 0.0002 segons (0.2 ms) i una amplitud de valor 4, per tant, els 5 períodes junts tenen una durada d'aproximadament 0.001 segons (1 ms) i una amplitud de valor 4.
+En la gràfica de la transformada (figure3) podem apreciar 10 mostres amb una dimensió de la transformada discreta igual a 5000, on tenim dues mostres per cada període, i cal ressaltar el pols que veiem en 2000-3000.
+
+En canvi, en la tercera gràfica (figure4) continuem tenint 5 períodes d'amplitud 4, però cada període té una durada aproximada de 0.00015 segons (0.15 ms), per tant, els 5 períodes junts tenen una durada d'aproximadament 0.00075 segons (0.75 ms).
+En la gràfica de la transformada (figure5) veiem dos polsos. El primer el veiem en 425-575 aproximadament, i el segon en 4425-4575. Per una altra part, ens trobem que la gràfica té 57 mostres en els 5 períodes.
 
 <br> <br>
 
@@ -256,10 +259,8 @@ plt.show()
 <img src="img/figure7(ex2).PNG" width="500" align="center">
 <br> <br>
 
-### Explica el resultat del apartat anterior:
-
-dwdwdwd
-
+### Explica el resultat del apartat anterior: <br>
+Com indicava en l'enunciat el fitxer wav l'hem creat a partir de f , la qual és fm/2, per tant, es 4000 Hz. Observant la gràfica comprovem que hi ha 5 períodes d'amplitud 1, on cada període té una durada de 0.0002 segons (0.2 ms) aproximadament. Per una altra part, podem observar el mateix gràfic de la transformada que hem comentat en el primer exercici.
 
 <br> <br>
 
@@ -281,6 +282,8 @@ dwdwdwd
 > - La relació entre els valors de l'índex k i la freqüència en Hz és:
 >
 > $f_k = \frac{k}{N} f_m$
+
+Com l'operació de dividir X(f) entre el màxim de X(f) equival a 1 no podem fer el que demana l'enunciat.
 
 ```python
 # Creem i guardem un fitxer un senyal sinusoidal de freqüència fx, digitalitzat a fm, de durada T segons i amplitud A:
@@ -342,6 +345,16 @@ plt.show()
 
 
 ```python
+import wave as readwave
+obj = readwave.open('so_exercici4.wav','r')                   # Obrim el fitxer
+print( "Nombre de canals:",obj.getnchannels())            # Nombre de canals
+if(obj.getnchannels()==1): {print("Mono")}
+else: {print("Stereo")}
+print ( "Freqüència de mostratge:",obj.getframerate())    # Freqüència de mostratge.
+print ("Nombre de mostres de senyal: ",obj.getnframes())  # Nombre de mostres de senyal.
+obj.close()                                               # Sortim del fitxer
+```
+```python
 T= 0.025                               
 data, fm =sf.read('so_exercici4.wav')       
 L = int(fm * T)                     
@@ -379,6 +392,15 @@ plt.show()
 <br>
 <img src="img/figure11(ex4).PNG" width="500" align="center">
 <br> <br>
+
+Nombre de canals: 1 <br>
+Mono <br>
+Freqüència de mostratge: 48000 <br>
+Nombre de mostres de senyal:  307618 <br>
+
+### Quines son les freqüències més importants del segment triat? <br>
+Totes les freqüències són igual d'importants, ja que en la gràfica s'observa una línia gairebé recta on podem apreciar que a mesura que augmenta la freqüència disminueix el '$\phi_x[k]$'.
+
 
 Entrega
 -------
