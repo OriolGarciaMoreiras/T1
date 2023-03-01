@@ -131,7 +131,7 @@ plt.show()
 sd.play(x, fm)
 ``` 
 <br>
-<img src="/img/figure2(ex1).PNG" width="500" align="center">
+<img src="img/figure2(ex1).PNG" width="500" align="center">
 <br> <br>
 
 ```python
@@ -151,7 +151,7 @@ plt.ylabel('$\phi_x[k]$')
 plt.show()
 ```
 <br>
-<img src="/D:\img/figure3(ex1).PNG" width="500" align="center">
+<img src="img/figure3(ex1).PNG" width="500" align="center">
 <br> <br>
 
 ```python
@@ -178,7 +178,7 @@ plt.show()
 sd.play(y, fm)
 ``` 
 <br>
-<img src="/D:\img/figure4(ex1).PNG" width="500" align="center">
+<img src="img/figure4(ex1).PNG" width="500" align="center">
 <br> <br>
 
 ```python
@@ -198,7 +198,7 @@ plt.ylabel('$\phi_x[k]$')
 plt.show()
 ```
 <br>
-<img src="/D:\img/figure5(ex1).PNG" width="500" align="center">
+<img src="img/figure5(ex1).PNG" width="500" align="center">
 <br> <br>
 
 ### COMENTA ELS RESULTATS:
@@ -232,7 +232,7 @@ plt.show()
 sd.play(x_r, fm)    
 ``` 
 <br>
-<img src="/D:\img/figure6(ex2).PNG" width="500" align="center">
+<img src="img/figure6(ex2).PNG" width="500" align="center">
 <br> <br>
 
 ```python
@@ -252,7 +252,7 @@ plt.ylabel('$\phi_x[k]$')
 plt.show()
 ``` 
 <br>
-<img src="/D:\img/figure7(ex2).PNG" width="500" align="center">
+<img src="img/figure7(ex2).PNG" width="500" align="center">
 <br> <br>
 
 ### Explica el resultat del apartat anterior:
@@ -305,7 +305,7 @@ plt.show()
 sd.play(x, fm)
 ```    
 <br>
-<img src="/D:\img/figure8(ex3).PNG" width="500" align="center">
+<img src="img/figure8(ex3).PNG" width="500" align="center">
 <br> <br>
 
 ```python
@@ -327,7 +327,7 @@ plt.ylabel('$\phi_x[k]$')
 plt.show()    
 ``` 
 <br>
-<img src="/D:\img/figure9(ex3).PNG" width="500" align="center">
+<img src="img/figure9(ex3).PNG" width="500" align="center">
 <br> <br>
 
 4. Tria un fitxer d'àudio en format wav i mono (el pots aconseguir si en tens amb altres formats amb el programa Audacity). 
@@ -355,7 +355,7 @@ plt.title('Exercici 4 (5 períodes)')
 plt.show()                             
 ```
 <br>
-<img src="/D:\github\T1\photos/figure10(ex4).PNG" width="500" align="center">
+<img src="img/figure10(ex4).PNG" width="500" align="center">
 <br> <br>
 
 ```python
@@ -376,7 +376,7 @@ plt.ylabel('$\phi_x[k]$')
 plt.show()   
 ``` 
 <br>
-<img src="/D:\github\T1\photos/figure11(ex4).PNG" width="500" align="center">
+<img src="img/figure11(ex4).PNG" width="500" align="center">
 <br> <br>
 
 Entrega
