@@ -10,9 +10,7 @@ from numpy.fft import fft     # Importem la funció fft
 
 T= 2.5                               # Durada de T segons
 fm=8000                              # Freqüència de mostratge en Hz
-fx=3500                              # Freqüència de la sinusoide
-fx1=4000
-fx2=6500
+fx=440                               # Freqüència de la sinusoide
 A=4                                  # Amplitud de la sinusoide
 pi=np.pi                             # Valor del número pi
 L = int(fm * T)                      # Nombre de mostres del senyal digital
@@ -28,7 +26,7 @@ plt.figure(0)                             # Nova figura
 plt.plot(t[0:Ls], x[0:Ls])                # Representació del senyal en funció del temps
 plt.xlabel('t en segons')                 # Etiqueta eix temporal
 plt.title('5 periodes de la sinusoide')   # Títol del gràfic
-plt.show()                                # Visualització de l'objecte gràfic. 
+plt.show() 
 
 import sounddevice as sd      # Importem el mòdul sounddevice per accedir a la tarja de so
 sd.play(x, fm)                # Reproducció d'àudio
