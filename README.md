@@ -131,7 +131,7 @@ plt.show()
 sd.play(x, fm)
 ``` 
 <br>
-<img src="/D:\github\T1\photos/figure2(ex1).PNG" width="500" align="center">
+<img src="/D:\github\T1\img/figure2(ex1).PNG" width="500" align="center">
 <br> <br>
 
 ```python
