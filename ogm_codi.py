@@ -62,7 +62,7 @@ sf.write('so_1.wav', x, fm)
 Tx = 1/fx                                   
 Ls = int(fm*5*Tx)                           
 
-# Gràfica1 periodes sinusoide
+# Periodes sinusoide
 plt.figure(2)                            
 plt.plot(t[0:Ls], x[0:Ls])                
 plt.xlabel('t en segons')                 
@@ -71,7 +71,7 @@ plt.show()
 sd.play(x, fm)    
 
 
-# Gràfica1 Transformada de fourier del senyal de Ls mostres amb DFT de N'
+# Transformada de fourier del senyal de Ls mostres amb DFT de N'
 N = 5000                       
 X = fft(x[0 : Ls], N)           
 k = np.arange(N)                       
@@ -101,7 +101,7 @@ sf.write('so_2.wav', y, fm)
 Ty = 1/fy                                  
 Ls = int(fm*5*Ty)                          
 
-# Gràfica2 periodes sinusoide
+# Periodes sinusoide
 plt.figure(4)                             
 plt.plot(t[0:Ls], y[0:Ls])                
 plt.xlabel('t en segons')                
@@ -110,7 +110,7 @@ plt.show()
 sd.play(y, fm)    
 
 
-# Gràfica2 Transformada de fourier del senyal de Ls mostres amb DFT de N'
+# Transformada de fourier del senyal de Ls mostres amb DFT de N'
 N=5000                        
 Y=fft(y[0 : Ls], N)           
 k=np.arange(N)                      
@@ -145,7 +145,7 @@ plt.title('Exercici 2, 5 periodes de la sinusoide')
 plt.show() 
 sd.play(x_r, fm)    
 
-# Gràfica3 Transformada de fourier del senyal de Ls mostres amb DFT de N'
+# Transformada de fourier del senyal de Ls mostres amb DFT de N'
 N = 5000                       
 X = fft(x_r[0 : Ls], N)         
 k = np.arange(N)                        
