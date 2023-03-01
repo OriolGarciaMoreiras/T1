@@ -202,7 +202,8 @@ plt.show()
 <br> <br>
 
 ### COMENTA ELS RESULTATS:
-dwdwd
+Com podem veure en la primera gràfica (figure2) hi han 5 períodes, on cada període té una durada aproxima de 0.0002 segons (0.2 ms) i una amplitud de valor 4, per tant els 5 períodes junts tenen una durada d'aproximadament 0.001 segons (1 ms) i una amplitud de valor 4. 
+En la gràfica de la transformada (figure3) podem apreciar 
 
 <br> <br>
 
